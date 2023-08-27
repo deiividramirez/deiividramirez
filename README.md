@@ -1,39 +1,3 @@
-<style>
-  .column {
-  float: left;
-  width: 69%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.column2 {
-  float: right;
-  width: 29%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-  .column2 {
-    width: 100%;
-    height: 150px;
-  }
-}
-</style>
-
 <div class="row" align="center">
   <div class="column"> <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake-dark.svg" />
