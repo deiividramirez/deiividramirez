@@ -3,6 +3,8 @@
 - 🌱 I’m currently at Guanajuato, MX
 - 📫 How to reach me: email me at [deiividramirez@gmail.com](deiividramirez@gmail.com)
 
+!()[https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake-dark.svg]
+
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=deiividramirez" alt="deiividramirez" /></a> </p>
 
 <h3 align="left">Connect with me:</h3>
