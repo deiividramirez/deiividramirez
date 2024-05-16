@@ -21,9 +21,9 @@
 <h3 align="left">👩‍💻  About Me</h3>
 
 👋 Hi, I’m David Ramírez alias @deiividramirez. I'm a Mathematician with a Master Degree on Computer Science
-- 🔭 I’m working as Control Engineer
+- 🔭 I’m working as Computer Vision Enginner
 - 🌱 I’m currently at Coahuila de Zaragoza, México
-- 👀 I’m interested in machine learning, computer vision, drones, dynamical systems, and control
+- 👀 I’m interested in machine learning, computer vision, robots, drones, and control
 - 📫 How to reach me: email me at deiividramirez@gmail.com
 - ⚡ In my free time I like to watch movies and series, hang out with friends, and I love to eat 😋.
 
