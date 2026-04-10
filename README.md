@@ -37,11 +37,23 @@
 
 <br>
 
-<p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=deiividramirez&show_icons=true&locale=en" alt="deiividramirez" /></p>
+<p align="center">
+  <img
+    src="https://github-readme-stats-ashy-seven-8yupbnblhj.vercel.app/api?username=deiividramirez&show_icons=true&locale=en&hide_border=true"
+    height="180"
+    alt="GitHub stats"
+    style="vertical-align: top;"
+  />
+  &nbsp;&nbsp;&nbsp;
+  <img
+    src="https://github-readme-stats-ashy-seven-8yupbnblhj.vercel.app/api/top-langs?username=deiividramirez&show_icons=true&locale=en&layout=compact&hide_border=true&card_width=360"
+    height="180"
+    alt="Top languages"
+    style="vertical-align: top;"
+  />
+</p>
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deiividramirez&show_icons=true&locale=en&layout=compact" alt="deiividramirez" /></p>
-
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=deiividramirez" alt="deiividramirez" /></a> </p>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=deiividramirez&theme=dracula" alt="deiividramirez" /></a> </p>
 
 
 <h3 align="left">Connect with me:</h3>
