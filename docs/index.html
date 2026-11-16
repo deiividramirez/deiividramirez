@@ -1,571 +1,627 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="paper">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David L. Ramírez P.</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- favicon make it round-->
-    <link
-      rel="apple-touch-icon"
-      href="https://avatars.githubusercontent.com/u/39071296?v=4"
-    />
-    <link
-      rel="icon"
-      href="https://avatars.githubusercontent.com/u/39071296?v=4"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-
-  <body>
+    <title>David L. Ramírez — Neuromorphic Computing, Computer Vision &amp; Robotics</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="description"
+      content="David Leonardo Ramírez Parada — Neuromorphic Applications Engineer at Intel, Adjunct Professor at Tecnológico de Monterrey, Mathematician &amp; M.Sc. in Computer Science (CIMAT)."
     />
-    <div class="resume-wrapper">
-      <section class="profile section-padding">
-        <div class="container">
-          <div class="picture-resume-wrapper">
-            <div class="picture-resume">
-              <span
-                ><img
-                  src="https://avatars.githubusercontent.com/u/39071296?v=4"
-                  alt=""
-              /></span>
-              <svg version="1.1" viewBox="0 0 350 350">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      stdDeviation="8"
-                      result="blur"
-                    />
-                    <feColorMatrix
-                      in="blur"
-                      mode="matrix"
-                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
-                      result="cm"
-                    />
-                  </filter>
-                </defs>
+    <meta property="og:title" content="David L. Ramírez — Neuromorphic Computing &amp; Computer Vision" />
+    <meta
+      property="og:description"
+      content="Mathematician and Computer Science M.Sc. working on LLMs, VLAs, and embeddings for Intel Loihi, real-time C/C++ edge vision, and aerial robotics."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leoram.dev" />
+    <meta property="og:image" content="https://leoram.dev/assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#FAF9F6" />
 
-                <g filter="url(#goo)">
-                  <circle
-                    id="main_circle"
-                    class="st0"
-                    cx="171.5"
-                    cy="175.6"
-                    r="130"
-                  />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/profile.jpg" />
 
-                  <circle
-                    id="circle"
-                    class="bubble0 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble1 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble2 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble3 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble4 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble5 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble6 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble7 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble8 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble9 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble10 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                </g>
-              </svg>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var raw = params.get("theme") || localStorage.getItem("dlr-theme");
+          if (raw === "optics" || raw === "matte" || raw === "dark") {
+            document.documentElement.setAttribute("data-theme", "matte");
+          } else if (raw === "paper" || raw === "light") {
+            document.documentElement.setAttribute("data-theme", "paper");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Smart Auto-Hiding Floating Header (Hides on scroll down, reveals on scroll up) -->
+    <header class="floating-header" id="floating-header">
+      <div class="shell">
+        <div class="header-bar">
+          <a href="#top" class="brand-link">
+            <span class="brand-name">David L. Ramírez</span>
+          </a>
+
+          <nav class="site-nav" aria-label="Primary Navigation">
+            <a href="#now"><span class="idx">01.</span> Now</a>
+            <a href="#artifacts"><span class="idx">02.</span> Work &amp; Research</a>
+            <a href="#experience"><span class="idx">03.</span> Experience</a>
+            <a href="#credentials"><span class="idx">04.</span> Specifications</a>
+            <a href="#contact"><span class="idx">05.</span> Colophon</a>
+          </nav>
+
+          <div class="header-controls">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="theme-switch"
+              aria-pressed="false"
+              aria-label="Toggle between Paper Light and Matte Dark theme"
+            >
+              <span class="theme-dot" aria-hidden="true"></span>
+              <span class="switch-label">PAPER</span>
+            </button>
+            <a
+              href="https://github.com/deiividramirez"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="header-ext"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="shell hero-grid">
+          <div class="hero-editorial">
+            <div class="meta-kicker">
+              <span>GUADALAJARA, MEXICO</span>
+              <span aria-hidden="true">—</span>
+              <span>20.6597° N, 103.3496° W</span>
             </div>
-            <div class="clearfix"></div>
+
+            <h1 class="hero-heading">
+              Event-driven intelligence, from <em>mathematical analysis</em> to neuromorphic silicon.
+            </h1>
+
+            <div class="author-profile-grid">
+              <div class="portrait-mat">
+                <img
+                  src="assets/profile.jpg"
+                  alt="David Leonardo Ramírez Parada"
+                  width="156"
+                  height="156"
+                  class="portrait-photo"
+                />
+              </div>
+
+              <div class="author-bio-col">
+                <div class="byline-details">
+                  <strong class="byline-name">David Leonardo Ramírez Parada</strong>
+                  <span class="byline-role">Neuromorphic Applications Engineer at Intel</span>
+                  <span class="byline-sub">
+                    Adjunct Professor at Tecnológico de Monterrey · M.Sc. CS (CIMAT) · Mathematician
+                  </span>
+                </div>
+
+                <p class="hero-prose">
+                  I research, adapt, and implement machine learning systems for constrained hardware. At
+                  <strong>Intel</strong>, my work focuses on mapping
+                  <strong>Large Language Models (LLMs)</strong>,
+                  <strong>Vision-Language-Action (VLA)</strong> models, and
+                  <strong>vector embeddings</strong> onto <strong>Loihi</strong> neuromorphic architectures.
+                  Previously, I built real-time C/C++ computer vision applications, custom GStreamer media
+                  pipelines, and vision-based multi-rotor control laws.
+                </p>
+              </div>
+            </div>
+
+            <div class="action-bar">
+              <a href="mailto:deiividramirez@gmail.com" class="btn btn-solid">
+                deiividramirez@gmail.com
+              </a>
+              <a
+                href="https://doi.org/10.3390/robotics13080115"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                MDPI Robotics Paper ↗
+              </a>
+              <a
+                href="https://www.linkedin.com/in/david-leonardo-ramirez-parada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
           </div>
-          <div class="name-wrapper">
-            <h1>David L.<br />Ramírez P.</h1>
-            <!-- YOUR NAME AND LAST NAME  -->
-          </div>
-          <div class="clearfix"></div>
-          <div class="contact-info clearfix">
-            <ul class="list-titles">
-              <li>Mail</li>
-              <li>Web</li>
-              <li>Home</li>
-            </ul>
-            <ul class="list-content">
-              <li>
-                <a target="_blank" href="mailto:deiividramirez@gmail.com"
-                  >deiividramirez@gmail.com</a
+
+          <!-- Interactive Technical Figure (Monochrome + Burnt Sienna Restraint) -->
+          <figure class="instrument-plate">
+            <div class="plate-header">
+              <span class="mono-caption" id="sim-heading">FIG. 01 — EVENT SPIKE EMBEDDING LATTICE</span>
+              <div class="mode-tabs" role="group" aria-label="Interactive Figure Mode">
+                <button
+                  type="button"
+                  aria-pressed="true"
+                  class="mode-tab is-active"
+                  data-mode="spikes"
                 >
-              </li>
-              <li>
-                <a target="_blank" href="https://leoramirez.me/deiividramirez/"
-                  >leoramirez.me/deiividramirez/</a
+                  01. Spikes
+                </button>
+                <button
+                  type="button"
+                  aria-pressed="false"
+                  class="mode-tab"
+                  data-mode="swarm"
                 >
-              </li>
-              <li>Guanajuato, México</li>
-            </ul>
-          </div>
-          <div class="contact-presentation">
-            <!-- YOUR PRESENTATION RESUME  -->
+                  02. Swarm
+                </button>
+              </div>
+            </div>
+
+            <div class="canvas-stage">
+              <canvas
+                id="optics-canvas"
+                aria-label="Interactive technical figure illustrating asynchronous neuromorphic spike propagation and bearing-only multi-rotor formation geometry"
+              ></canvas>
+              <div class="canvas-instruction" id="canvas-hint">
+                CURSOR OR CLICK — INJECT ASYNCHRONOUS EVENTS
+              </div>
+            </div>
+
+            <figcaption class="plate-telemetry">
+              <div class="tel-item">
+                <span class="tel-key">MODEL</span>
+                <span class="tel-val" id="tel-arch">SPARSE SNN / VLA</span>
+              </div>
+              <div class="tel-item">
+                <span class="tel-key">OBSERVABLE</span>
+                <span class="tel-val" id="tel-rate">138 Hz</span>
+              </div>
+              <div class="tel-item">
+                <span class="tel-key">REGIME</span>
+                <span class="tel-val accent-text" id="tel-state">EVENT Δt</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 01. NOW SECTION -->
+      <section id="now" class="editorial-section">
+        <div class="shell split-layout">
+          <aside class="section-rail">
+            <span class="rail-index">01.</span>
+            <h2 class="rail-title">Now</h2>
+            <span class="rail-meta">UPDATED NOV 2026</span>
+          </aside>
+
+          <div class="section-prose">
             <p>
-              I'm a Computer Science graduate with extensive experience in
-              Python and C++. Moreover, my Master's degree has provided me with
-              advanced knowledge of computer vision, machine learning, and
-              control systems. I'm motivated to drive innovation and tackle
-              intricate problems within the tech industry.
+              Based in Guadalajara, Mexico, working at <strong>Intel</strong> on how
+              contemporary foundation-model representations — specifically LLMs, Vision-Language-Action
+              policies, and dense/sparse embeddings — execute under event-driven neuromorphic constraints on
+              <strong>Intel Loihi</strong>.
+            </p>
+            <p>
+              After teaching two undergraduate semesters as an Adjunct Professor at
+              <strong>Tecnológico de Monterrey</strong>, I am preparing coursework to return to the
+              classroom next semester alongside my industry engineering responsibilities.
             </p>
           </div>
-          <div class="contact-social clearfix">
-            <ul class="list-titles">
-              <!-- list with app icons -->
-              <!-- <li>LinkedIn <i class="fa fa-linkedin" style="color: #5c85cc;"></i></li> -->
-              <li>LinkedIn <i class="fa fa-linkedin"></i></li>
-              <li>GitHub <i class="fa fa-github"></i></li>
-              <li>Web <i class="fa fa-globe"></i></li>
-            </ul>
-            <ul class="list-content">
-              <li>
+        </div>
+      </section>
+
+      <!-- 02. SELECTED WORK & RESEARCH ARTIFACTS -->
+      <section id="artifacts" class="editorial-section">
+        <div class="shell split-layout">
+          <aside class="section-rail">
+            <span class="rail-index">02.</span>
+            <h2 class="rail-title">Selected Work &amp; Research</h2>
+            <span class="rail-meta">PAPERS &amp; SYSTEMS</span>
+          </aside>
+
+          <div class="artifact-list">
+            <!-- Artifact 1: Peer-Reviewed Paper -->
+            <article class="artifact-entry artifact-featured">
+              <div class="artifact-header">
+                <span class="mono-meta">PEER-REVIEWED JOURNAL ARTICLE · JULY 2024 · MDPI ROBOTICS 13(8), 115</span>
+                <span class="mono-meta accent-text">DOI: 10.3390/robotics13080115</span>
+              </div>
+
+              <h3 class="artifact-title">
+                Vision-Based Formation Control of Quadrotors Using a Bearing-Only Approach
+              </h3>
+
+              <p class="artifact-authors">
+                <strong>David L. Ramírez-Parada</strong>, Héctor M. Becerra, Carlos A. Toro-Arcila, and
+                Gustavo Arechavaleta
+              </p>
+
+              <div class="paper-split">
+                <div class="paper-text">
+                  <p>
+                    Formulated a leader–follower multi-quadrotor control law relying exclusively on onboard
+                    monocular visual measurements without global position estimation. Leaders navigate via
+                    decoupled image-based visual servoing using invariant moments, while followers preserve a
+                    translation- and scale-invariant geometric formation under camera field-of-view rigidity
+                    constraints — allowing the team to scale dynamically and cross narrow window apertures.
+                  </p>
+
+                  <div class="artifact-links">
+                    <a
+                      href="https://doi.org/10.3390/robotics13080115"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-link"
+                    >
+                      Read Open-Access Paper ↗
+                    </a>
+                    <button type="button" id="copy-bibtex" class="inline-action">
+                      <span id="bibtex-label">Copy BibTeX Citation</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="paper-figure" aria-hidden="true">
+                  <svg viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="339" height="239" rx="2" stroke="currentColor" stroke-opacity="0.16" />
+                    <text x="14" y="22" fill="currentColor" fill-opacity="0.65" font-family="JetBrains Mono, monospace" font-size="9.5">
+                      FIG. 02 — BEARING RIGIDITY &amp; FOV CONSTRAINTS
+                    </text>
+                    <path d="M82 178 L156 58 L198 88 Z" fill="currentColor" fill-opacity="0.05" />
+                    <path d="M258 178 L142 88 L184 58 Z" fill="var(--accent)" fill-opacity="0.08" />
+                    <g stroke="currentColor" stroke-opacity="0.24" stroke-width="1" stroke-dasharray="3 3">
+                      <line x1="170" y1="62" x2="82" y2="178" />
+                      <line x1="170" y1="62" x2="258" y2="178" />
+                      <line x1="82" y1="178" x2="258" y2="178" />
+                      <line x1="82" y1="178" x2="170" y2="132" />
+                      <line x1="258" y1="178" x2="170" y2="132" />
+                      <line x1="170" y1="62" x2="170" y2="132" />
+                    </g>
+                    <!-- Unit Bearing Vectors -->
+                    <line x1="82" y1="178" x2="118" y2="130" stroke="currentColor" stroke-width="2" />
+                    <line x1="258" y1="178" x2="222" y2="130" stroke="var(--accent)" stroke-width="2" />
+                    <line x1="170" y1="132" x2="170" y2="94" stroke="var(--accent)" stroke-width="2" />
+
+                    <rect x="165" y="57" width="10" height="10" fill="var(--accent)" />
+                    <text x="184" y="66" fill="currentColor" font-family="JetBrains Mono, monospace" font-size="10">
+                      L₀ (Leader)
+                    </text>
+                    <circle cx="170" cy="132" r="4.5" fill="currentColor" />
+                    <text x="182" y="136" fill="currentColor" fill-opacity="0.8" font-family="JetBrains Mono, monospace" font-size="9.5">
+                      F₁
+                    </text>
+                    <circle cx="82" cy="178" r="4.5" fill="currentColor" />
+                    <text x="48" y="196" fill="currentColor" fill-opacity="0.8" font-family="JetBrains Mono, monospace" font-size="9.5">
+                      F₂ (g₂₀)
+                    </text>
+                    <circle cx="258" cy="178" r="4.5" fill="currentColor" />
+                    <text x="238" y="196" fill="currentColor" fill-opacity="0.8" font-family="JetBrains Mono, monospace" font-size="9.5">
+                      F₃ (g₃₀)
+                    </text>
+                    <text x="14" y="224" fill="currentColor" fill-opacity="0.65" font-family="JetBrains Mono, monospace" font-size="9.5">
+                      g_ij = (p_j − p_i) / ‖p_j − p_i‖
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </article>
+
+            <!-- Artifact 2: Neuromorphic Foundation Models -->
+            <article class="artifact-entry">
+              <div class="artifact-header">
+                <span class="mono-meta">SYSTEMS &amp; ARCHITECTURE · 2026 — PRESENT</span>
+                <span class="mono-meta">INTEL · LOIHI</span>
+              </div>
+              <h3 class="artifact-title">
+                LLMs, VLAs &amp; Vector Embeddings on Neuromorphic Hardware
+              </h3>
+              <p class="artifact-prose">
+                Prototyping and evaluating foundation-model components — Large Language Models,
+                Vision-Language-Action models, and embedding pipelines — mapped to event-driven execution on
+                Intel Loihi architectures using Python and C++.
+              </p>
+            </article>
+
+            <!-- Artifact 3: Real-Time Embedded Edge Vision & GStreamer -->
+            <article class="artifact-entry">
+              <div class="artifact-header">
+                <span class="mono-meta">PRODUCTION EDGE SOFTWARE · 2024 — 2026</span>
+                <span class="mono-meta">NVIDIA JETSON · QUALCOMM · GSTREAMER</span>
+              </div>
+              <h3 class="artifact-title">
+                Low-Latency Embedded Vision &amp; Custom GStreamer Media Pipelines
+              </h3>
+              <p class="artifact-prose">
+                Implemented C/C++ and Python inference engines and custom GStreamer video plugins for
+                multi-stream camera ingestion, hardware-accelerated decoding, and neural network execution on
+                ARM-based NVIDIA and Qualcomm boards.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03. EXPERIENCE LEDGER -->
+      <section id="experience" class="editorial-section">
+        <div class="shell split-layout">
+          <aside class="section-rail">
+            <span class="rail-index">03.</span>
+            <h2 class="rail-title">Experience</h2>
+            <span class="rail-meta">2019 — PRESENT</span>
+          </aside>
+
+          <div class="ledger-table">
+            <article class="ledger-item">
+              <div class="ledger-dates">
+                <span class="mono-date">JUN 2026 — PRESENT</span>
+                <span class="mono-place">Guadalajara, Mexico</span>
+              </div>
+              <div class="ledger-content">
+                <div class="ledger-role-line">
+                  <h3>Neuromorphic Applications Engineer</h3>
+                  <span class="ledger-org">Intel Corporation</span>
+                </div>
+                <p>
+                  Adapting and prototyping Large Language Models (LLMs), Vision-Language-Action (VLA)
+                  architectures, and vector embeddings for event-driven execution on Intel Loihi neuromorphic
+                  platforms.
+                </p>
+              </div>
+            </article>
+
+            <article class="ledger-item">
+              <div class="ledger-dates">
+                <span class="mono-date">AUG 2024 — PRESENT</span>
+                <span class="mono-place">Mexico</span>
+              </div>
+              <div class="ledger-content">
+                <div class="ledger-role-line">
+                  <h3>Adjunct Professor</h3>
+                  <span class="ledger-org">Tecnológico de Monterrey</span>
+                </div>
+                <p>
+                  Teaching undergraduate computer science and engineering courses in algorithms, software
+                  construction, and applied mathematical modeling.
+                </p>
+              </div>
+            </article>
+
+            <article class="ledger-item">
+              <div class="ledger-dates">
+                <span class="mono-date">JAN 2024 — JUN 2026</span>
+                <span class="mono-place">Saltillo, Mexico</span>
+              </div>
+              <div class="ledger-content">
+                <div class="ledger-role-line">
+                  <h3>AI Software Developer</h3>
+                  <span class="ledger-org">Introid Inc.</span>
+                </div>
+                <p>
+                  Built real-time computer vision software for embedded platforms in C/C++ and Python.
+                  Optimized deep learning inference for NVIDIA and Qualcomm SoCs and wrote custom GStreamer
+                  video plugins and streaming pipelines.
+                </p>
+              </div>
+            </article>
+
+            <article class="ledger-item">
+              <div class="ledger-dates">
+                <span class="mono-date">AUG 2023 — DEC 2023</span>
+                <span class="mono-place">Guanajuato, Mexico</span>
+              </div>
+              <div class="ledger-content">
+                <div class="ledger-role-line">
+                  <h3>Academic Assistant — Numerical Methods</h3>
+                  <span class="ledger-org">Center for Research in Mathematics (CIMAT)</span>
+                </div>
+                <p>
+                  Reviewed algorithmic implementations, graded numerical analysis assignments, and mentored
+                  students in scientific computing.
+                </p>
+              </div>
+            </article>
+
+            <article class="ledger-item">
+              <div class="ledger-dates">
+                <span class="mono-date">2019 — 2020</span>
+                <span class="mono-place">Bogotá, Colombia</span>
+              </div>
+              <div class="ledger-content">
+                <div class="ledger-role-line">
+                  <h3>Academic Assistant — Mathematics</h3>
+                  <span class="ledger-org">Universidad Distrital Francisco José de Caldas</span>
+                </div>
+                <p>
+                  Two semester appointments (Aug–Dec 2019 and Aug–Dec 2020) tutoring undergraduate
+                  mathematics courses and proof problem-solving.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04. EDUCATION & TECHNICAL SPECIFICATIONS -->
+      <section id="credentials" class="editorial-section">
+        <div class="shell split-layout">
+          <aside class="section-rail">
+            <span class="rail-index">04.</span>
+            <h2 class="rail-title">Education &amp; Specifications</h2>
+            <span class="rail-meta">DEGREES &amp; STACK</span>
+          </aside>
+
+          <div class="specs-container">
+            <div class="degrees-block">
+              <div class="degree-row">
+                <div class="degree-head">
+                  <h3>M.Sc. in Computer Science</h3>
+                  <span class="mono-date">2021 — 2023</span>
+                </div>
+                <div class="degree-school">Center for Research in Mathematics (CIMAT) · Guanajuato, Mexico</div>
+                <p>
+                  Coursework and thesis research in computer vision, machine learning, robotics, nonlinear
+                  control systems, and numerical algorithms.
+                </p>
+              </div>
+
+              <div class="degree-row">
+                <div class="degree-head">
+                  <h3>B.Sc. in Mathematics</h3>
+                  <span class="mono-date">2015 — 2021</span>
+                </div>
+                <div class="degree-school">Universidad Distrital Francisco José de Caldas · Bogotá, Colombia</div>
+                <p>
+                  Focused on mathematical analysis and singular perturbations in partial differential
+                  equations, with undergraduate research on the Navier–Stokes equations.
+                </p>
+              </div>
+            </div>
+
+            <div class="spec-sheet" aria-label="Technical Specifications">
+              <div class="spec-row">
+                <span class="spec-key">01. NEUROMORPHIC &amp; ML</span>
+                <span class="spec-val">
+                  Intel Loihi · LLMs · Vision-Language-Action (VLA) · Vector Embeddings · Event-Driven /
+                  Spiking Architectures · PyTorch · TensorFlow / TFLite · Model Quantization
+                </span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">02. SYSTEMS &amp; HARDWARE</span>
+                <span class="spec-val">
+                  C++ · C · Python · ARM Architecture · NVIDIA Jetson · Qualcomm Platforms · Embedded Linux ·
+                  Docker · Git
+                </span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">03. VISION &amp; ROBOTICS</span>
+                <span class="spec-val">
+                  GStreamer (Plugins &amp; Pipelines) · OpenCV · ROS / ROS 2 · Gazebo · Image-Based Visual
+                  Servoing · Multi-Agent Control · MATLAB · PostgreSQL
+                </span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">04. CERTIFICATIONS</span>
+                <span class="spec-val">
+                  NVIDIA DLI (Building Video AI Applications at the Edge on Jetson Nano) · Google Data
+                  Analytics Specialization · CIMAT Smart IoT · EF SET C1 Advanced English (70/100)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05. CONTACT & COLOPHON -->
+      <section id="contact" class="editorial-section section-last">
+        <div class="shell split-layout">
+          <aside class="section-rail">
+            <span class="rail-index">05.</span>
+            <h2 class="rail-title">Contact &amp; Colophon</h2>
+            <span class="rail-meta">CORRESPONDENCE</span>
+          </aside>
+
+          <div class="colophon-grid">
+            <div class="contact-block">
+              <p class="contact-intro">
+                Available for academic correspondence, research discussions, and engineering inquiries in
+                neuromorphic computing, computer vision, and autonomous robotics.
+              </p>
+
+              <div class="contact-table">
+                <div class="contact-line">
+                  <span class="mono-meta">EMAIL</span>
+                  <div class="email-inline">
+                    <a href="mailto:deiividramirez@gmail.com" class="text-link">deiividramirez@gmail.com</a>
+                    <button
+                      type="button"
+                      id="copy-email"
+                      class="copy-btn"
+                      aria-label="Copy email address to clipboard"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                </div>
+                <div class="contact-line">
+                  <span class="mono-meta">LINKEDIN</span>
+                  <a
+                    href="https://www.linkedin.com/in/david-leonardo-ramirez-parada/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                  >
+                    linkedin.com/in/david-leonardo-ramirez-parada ↗
+                  </a>
+                </div>
+                <div class="contact-line">
+                  <span class="mono-meta">GITHUB</span>
+                  <a
+                    href="https://github.com/deiividramirez"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                  >
+                    github.com/deiividramirez ↗
+                  </a>
+                </div>
+                <div class="contact-line">
+                  <span class="mono-meta">ORCID / DOI</span>
+                  <a
+                    href="https://doi.org/10.3390/robotics13080115"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                  >
+                    doi.org/10.3390/robotics13080115 ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <footer class="colophon-note">
+              <h3 class="mono-meta">COLOPHON</h3>
+              <p>
+                Typeset in <em>Newsreader</em>, <em>Plus Jakarta Sans</em>, and <em>JetBrains Mono</em>.
+                Engineered with static HTML, custom CSS hairlines, and vanilla HTML5 Canvas — zero client
+                frameworks, zero external UI libraries, zero tracking scripts. Source maintained at
                 <a
+                  href="https://github.com/deiividramirez/deiividramirez"
                   target="_blank"
-                  href="https://www.linkedin.com/in/david-leonardo-ramirez-parada/"
-                >
-                  David L. Ramirez P.</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/deiividramirez/"
-                  >deiividramirez</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://leoramirez.me/deiividramirez/"
-                  >leoramirez.me/deiividramirez
-                </a>
-              </li>
-            </ul>
+                  rel="noopener noreferrer"
+                  class="text-link"
+                >deiividramirez/deiividramirez ↗</a>
+                and published via GitHub Pages at <strong>leoram.dev</strong>.
+              </p>
+              <div class="copyright-line mono-meta">
+                © 2026 DAVID LEONARDO RAMÍREZ PARADA · GUADALAJARA, JALISCO, MEXICO
+              </div>
+            </footer>
           </div>
         </div>
       </section>
+    </main>
 
-      <section class="experience section-padding">
-        <div class="container">
-          <h3 class="experience-title">Experience</h3>
-
-          <div class="experience-wrapper">
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                Centro de Investigación en Matemáticas (CIMAT)
-              </div>
-              <div class="time">August 2023 - December 2023</div>
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Academic Assistant</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  Mentored and tutored students in a variety of academic topics,
-                  resulting in improved grades and test scores. Graded their
-                  homework, I actively engage in providing feedback to promote
-                  better results, answering their questions, and mentoring them
-                  to improve their overall capacity in numerical methods.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                Universidad Distrital Francisco José de Caldas
-              </div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">August 2020 - December 2020</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Academic Assistant</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  Mentored and tutored students in a variety of academic topics,
-                  resulting in improved grades and test scores. Monitored
-                  student progress and provided guidance on improving study
-                  habits and test-taking strategies
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                Universidad Distrital Francisco José de Caldas
-              </div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">August 2020 - December 2020</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Academic Assistant</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  Mentored and tutored students in a variety of academic topics,
-                  resulting in improved grades and test scores. Monitored
-                  student progress and provided guidance on improving study
-                  habits and test-taking strategies
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-          </div>
-          <!--Skill experience-->
-
-          <h3 class="experience-title">Education</h3>
-
-          <div class="experience-wrapper">
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                Centro de Investigación en Matemáticas (CIMAT)
-              </div>
-              <div class="time">August 2021 - December 2023</div>
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Computer Science Master Degree</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  My master's program provided me with extensive knowledge
-                  across multiple disciplines, including machine learning,
-                  computer programming, robotics, control systems, computer
-                  vision, advanced algorithms, and mathematics. It enables me to
-                  approach intricate challenges with creativity and exactness,
-                  propelling groundbreaking progress in the tech sector.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                Universidad Distrital Francisco José de Caldas
-              </div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">August 2015 - April 2021</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Mathematics Bachelor Degree</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  During my undergraduate studies in Mathematics, I specialized
-                  in mathematical analysis with a focus on singular
-                  perturbations within a Class of partial differential
-                  equations. My research extended to the Stock-Navier equations,
-                  which are in the field of physics. This educational background
-                  enhanced understanding of the effectiveness of mathematical
-                  reasoning in addressing complex real-world challenges, laying
-                  the groundwork for my future in computer science and
-                  technology.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-          </div>
-          <!--Skill experience-->
-
-          <h3 class="experience-title">Courses</h3>
-
-          <div class="experience-wrapper">
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">COURSERA</div>
-              <div class="time">September 2023</div>
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                Analizar datos para responder preguntas
-              </div>
-              <div class="company-description">
-                <p>
-                  This course is part of the Google Data Analytics Certificate.
-                  In this course, you’ll learn how to organize, analyze, and
-                  interpret data using.
-                </p>
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                EF Standard English Test (EF SET)
-              </div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">September 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                EF SET English Certificate 70/100 (CI Advanced)
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  The EF SET is the most convenient and learner-centric English
-                  test in the world.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">COURSERA</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">September 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                Proceso de datos sucios a datos limpios
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  This course is part of the Google Data Analytics Certificate.
-                  In this course, you’ll learn how to clean up messy datasets,
-                  and prepare them for analysis.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">COURSERA</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">July 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                Formula preguntas para tomar decisiones basadas en datos
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  This course is part of the Google Data Analytics Certificate.
-                  In this course, you’ll learn how to take decisions based on
-                  data.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">COURSERA</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">July 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                Preparar datos para la exploración
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  This course is part of the Google Data Analytics Certificate.
-                  In this course, you’ll learn how to explore data, and get the
-                  insights from it.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">COURSERA</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">June 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                Aspectos básicos: Datos, datos, en todas partes
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  This course is part of the Google Data Analytics Certificate.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">Microsoft</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">March 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                Fundamentos profesionales del desarrollo de software, por
-                Microsoft y LinkedIn
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  This course is part of LinkedIn and Microsoft's Professional
-                  Certificate Program in Entry-Level Software Development.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">
-                Centro de Investigación en Matemáticas (CIMAT)
-              </div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">November 2022</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
-
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Curso Smart IOT</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  This course is part of the Smart IOT program, which is a
-                  certain courses that will help program microcontrollers and
-                  develop IoT projects with Micro-Python, Arduino, and
-                  Tensforflow Lite.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
-          </div>
-          <!--Skill experience-->
-
-          <div class="section-wrapper clearfix">
-            <h3 class="section-title">Skills</h3>
-            <!-- YOUR SET OF SKILLS no bullets -->
-            <ul
-              style="
-                list-style-type: none;
-                width: 90%;
-                align-items: center;
-                align-content: center;
-              "
-            >
-              <li class="skill-percentage">Python</li>
-              <li class="skill-percentage">C / C++</li>
-              <li class="skill-percentage">Java</li>
-              <li class="skill-percentage">ROS / ROS 2</li>
-              <li class="skill-percentage">Gazebo Simulator</li>
-              <li class="skill-percentage">SQL</li>
-            </ul>
-          </div>
-
-          <div class="section-wrapper clearfix">
-            <h3 class="section-title">Hobbies</h3>
-            <!-- DESCRIPTION OF YOUR HOBBIES -->
-            <ul
-              style="
-                list-style-type: none;
-                width: 90%;
-                align-items: center;
-                align-content: center;
-              "
-            >
-              <li>Tech</li>
-              <li>Reading</li>
-              <li>Smart devices</li>
-              <li>Online courses</li>
-              <li>Watching movies</li>
-              <li>Listening to music</li>
-              <li>Learning new things</li>
-              <li>Smart home automation processes</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="clearfix"></div>
-    </div>
+    <script src="app.js"></script>
   </body>
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-  <script src="style.js"></script>
 </html>

@@ -1,109 +1,61 @@
-<div class="row" align="center">
-  <div class="column"> <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake.svg" />
-</picture></div>
-</div>
-  
 <div align="center">
-  <a href="https://www.linkedin.com/in/david-leonardo-ramirez-parada/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  <a href="https://leoram.dev" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./docs/assets/banner-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./docs/assets/banner-light.svg" />
+      <img alt="David L. Ramírez — Neuromorphic Applications Engineer" src="./docs/assets/banner-light.svg" width="100%" />
+    </picture>
   </a>
 </div>
 
-###
-
-<h1 align="center">HEY THERE! 👋</h1>
-
-###
-
-<h3 align="left">👩‍💻  About Me</h3>
-
-👋 Hi, I’m David Ramírez alias @deiividramirez. I'm a Mathematician with a Master Degree on Computer Science
-- 🔭 I’m working as Computer Vision Enginner
-- 🌱 I’m currently at Guadalajara, Jalisco, México
-- 👀 I’m interested in machine learning, computer vision, robots, drones, and control
-- 📫 How to reach me: email me at deiividramirez@gmail.com
-- ⚡ In my free time I like to watch movies and series, hang out with friends, and I love to eat 😋.
-
-
-###
-
-<h3 align="left">🔥   My Stats :</h3>
-
-###
-
-
-<br>
+<br />
 
 <p align="center">
-  <img
-    src="https://github-readme-stats-ashy-seven-8yupbnblhj.vercel.app/api?username=deiividramirez&show_icons=true&locale=en&hide_border=true"
-    height="180"
-    alt="GitHub stats"
-    style="vertical-align: top;"
-  />
-  &nbsp;&nbsp;&nbsp;
-  <img
-    src="https://github-readme-stats-ashy-seven-8yupbnblhj.vercel.app/api/top-langs?username=deiividramirez&show_icons=true&locale=en&layout=compact&hide_border=true&card_width=360"
-    height="180"
-    alt="Top languages"
-    style="vertical-align: top;"
-  />
+  <a href="https://leoram.dev" target="_blank" rel="noopener noreferrer"><strong>01. Portfolio (leoram.dev) ↗</strong></a>
+  &nbsp;&nbsp;—&nbsp;&nbsp;
+  <a href="https://doi.org/10.3390/robotics13080115" target="_blank" rel="noopener noreferrer"><strong>02. MDPI Robotics Paper ↗</strong></a>
+  &nbsp;&nbsp;—&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/david-leonardo-ramirez-parada/" target="_blank" rel="noopener noreferrer"><strong>03. LinkedIn ↗</strong></a>
+  &nbsp;&nbsp;—&nbsp;&nbsp;
+  <a href="mailto:deiividramirez@gmail.com"><strong>04. deiividramirez@gmail.com</strong></a>
 </p>
 
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=deiividramirez&theme=dracula" alt="deiividramirez" /></a> </p>
+---
 
+### 01. Overview
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/david-leonardo-ramirez-parada/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="david-leonardo-ramirez-parada/" height="30" width="40" /></a>
+Mathematician and Computer Science M.Sc. ([CIMAT](https://www.cimat.mx/)) based in Guadalajara, Mexico, working across neuromorphic architectures, embedded computer vision, and multi-robot control.
 
-###
+- **Intel Corporation** *(Jun 2026 — Present)* — **Neuromorphic Applications Engineer** adapting Large Language Models (LLMs), Vision-Language-Action (VLA) models, and vector embeddings for event-driven execution on **Intel Loihi**.
+- **Tecnológico de Monterrey** *(Aug 2024 — Present)* — **Adjunct Professor** teaching undergraduate computer science and engineering courses.
+- **Introid Inc.** *(Jan 2024 — Jun 2026)* — **AI Software Developer** building real-time C/C++ and Python vision systems on NVIDIA Jetson and Qualcomm boards alongside custom **GStreamer** plugins and video pipelines.
 
-<h3 align="left">🛠 Language and tools</h3>
+---
 
-###
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" height="40" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="40" alt="anaconda logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="40" alt="blender logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="40" alt="gitlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="40" alt="matlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="40" alt="opencv logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="pandas logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="tensorflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="pytorch logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="csharp logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
+### 02. Selected Publication
+
+**Vision-Based Formation Control of Quadrotors Using a Bearing-Only Approach**  
+**David L. Ramírez-Parada**, Héctor M. Becerra, Carlos A. Toro-Arcila, and Gustavo Arechavaleta  
+*Robotics* (MDPI), Vol. 13, No. 8, 115, July 2024 — [**DOI: 10.3390/robotics13080115 ↗**](https://doi.org/10.3390/robotics13080115)
+
+Decoupled monocular visual servoing and scale-invariant bearing-only formation control enabling multi-quadrotor teams to navigate constrained apertures without global position estimation.
+
+---
+
+### 03. Technical Specifications
+
+| Index | Domain | Core Stack |
+| :--- | :--- | :--- |
+| `01.` | **Neuromorphic & ML** | `Intel Loihi` · `LLMs & VLAs` · `Vector Embeddings` · `Event-Driven SNNs` · `PyTorch` · `TensorFlow / TFLite` · `Quantization` |
+| `02.` | **Systems & Hardware** | `C++` · `C` · `Python` · `ARM Architecture` · `NVIDIA Jetson` · `Qualcomm SoCs` · `Embedded Linux` · `Docker` · `Git` |
+| `03.` | **Vision & Robotics** | `GStreamer` · `OpenCV` · `ROS / ROS 2` · `Gazebo` · `Visual Servoing` · `Nonlinear Control` · `MATLAB` · `PostgreSQL` |
+
+---
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Graph" src="https://raw.githubusercontent.com/deiividramirez/deiividramirez/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
 </div>
-
